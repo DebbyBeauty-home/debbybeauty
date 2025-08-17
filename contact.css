@@ -1,0 +1,63 @@
+@import url('index.css');
+
+iframe {
+  margin-top: 15px;
+  border-radius: 8px;
+}
+@keyframes Rotate {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(5deg) translateY(-10px);
+  }
+}
+
+header h1 {
+  animation: Rotate 20s infinite ease-in-out;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: #b3005f;
+  border-bottom: 0cqmax;
+  box-sizing: content-box;
+}
+form {
+  margin: 20px 0;
+  padding: 15px;
+  background: blueviolet;
+  border: 1px solid #d63384;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: black;
+  color: blue;
+  padding: 10px 15px;
+  border: whitesmoke;
+  border-radius: 59px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a11c60;
+}
+/* Rotating Title Animation */
+.rotating {
+  display: inline-block;
+  animation: spin 10s linear infinite;
+  transform-origin: center;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
